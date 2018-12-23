@@ -1,2 +1,4 @@
 # ResponsivePortfolio-1
-Responsive Website Template
+Responsive Portfolio
+
+Website was created using Pug & Sass
