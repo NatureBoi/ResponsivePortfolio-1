@@ -1,13 +1,20 @@
+@import 'reset'
 @import 'config'
 @import 'menu'
 
-
-html
-    font-size: 62.5%
 *
     box-sizing: border-box
 
-
+html
+    font-size: 62.5%
+    h2
+        font-size: 2rem
+    h3
+        font-size: 1.7rem
+    h6
+        font-size: 1.6rem
+    p
+        font-size: 1.3rem
 body
     @include background
     background: $primary-color
@@ -17,7 +24,7 @@ body
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     line-height: 1.5
 
-// Headings
+/* Headings
 h1,h2,h3
     margin: 0
     font-weight: 400
@@ -89,9 +96,12 @@ main
         background: lighten($primary-color, 5)
         padding: 0.5rem
         border-bottom: 5px solid $secondary-color
+    
+    h6
+        color: $secondary-color
 
 
-// Work/Projects
+/* Work/Projects
 
 .projects
     display: grid
@@ -106,6 +116,8 @@ main
             opacity: 0.5
             border-color: $secondary-color
             @include easeOut
+    .btn
+        font-size: 1.2rem
 
 
 /* Contact Page
@@ -133,7 +145,7 @@ main
                 color: set-text-color($secondary-color)
 
 
-// Button Styles
+/* Button Styles
 .btn
     display: block
     padding: 0.5rem 1rem
@@ -162,7 +174,7 @@ main
     background: darken($primary-color, 10)
     color: set-text-color($primary-color)
     height: 60px
-    
+    font-size: 1.2rem
 
 
 
